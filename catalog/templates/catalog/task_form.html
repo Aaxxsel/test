@@ -1,5 +1,8 @@
 
-<a href="/tasks/list/">список задач</a><br><br>
+
+
+
+<header><h1><a href="/tasks/list/">список задач</a><br><br></h1></header>
 
 <form action="/tasks/new/" method="post">
     {% csrf_token %}
@@ -12,4 +15,23 @@
     <input type="submit" value="создать">
 
 </form>
+
+
+<style>
+    body {
+        background: thistle;
+    }
+
+    header {
+        position: relative;
+        height: 90px;
+        background-color: azure;
+        margin-bottom: 50px;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 45px;
+    }
+
+    h1 {
+        margin: 35 50 15px 547px;
+</style>
 

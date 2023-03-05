@@ -1,12 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<header><h1>
+<a href="/tasks/list/">список задач</a><br>
+        <a href="/tasks/new/">создать задачу</a>
+</h1></header>
+
 {% if text_task %}
     {{ text_task.text }}
 {% endif %}
-</body>
-</html>
+
+
+<style>
+    body {
+        background: thistle;
+    }
+
+    header {
+        position: relative;
+        height: 90px;
+        background-color: azure;
+        margin-bottom: 50px;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 45px;
+    }
+
+    h1 {
+        margin: 35 50 15px 547px;
+</style>

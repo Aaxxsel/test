@@ -1,4 +1,6 @@
-<a href="/tasks/new/">создать задачу</a>
+
+
+<header><h1><a href="/tasks/new/">создать задачу</a></h1></header>
 <br><br><br><br><br><br>
 
 {% for x in notes_list %}
@@ -8,3 +10,22 @@
 
 
 {% endfor %}
+
+
+<style>
+    body {
+        background: thistle;
+    }
+
+    header {
+        position: relative;
+        height: 90px;
+        background-color: azure;
+        margin-bottom: 50px;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.5) 20px 20px 45px;
+    }
+
+    h1 {
+        margin: 35 50 15px 547px;
+</style>
