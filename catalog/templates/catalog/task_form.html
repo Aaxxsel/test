@@ -1,0 +1,15 @@
+
+<a href="/tasks/list/">список задач</a><br><br>
+
+<form action="/tasks/new/" method="post">
+    {% csrf_token %}
+    Создать новую задачу<br><br>
+    Введите заголовок
+    <input type='text' name="title">
+    Введите содержимое
+    <input type='text' name="text"><br><br>
+
+    <input type="submit" value="создать">
+
+</form>
+

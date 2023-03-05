@@ -1,0 +1,10 @@
+<a href="/tasks/new/">создать задачу</a>
+<br><br><br><br><br><br>
+
+{% for x in notes_list %}
+    {{ x.headings }}
+    <a href="/task/{{x.id}}/">перейти к содержиому задачи</a><br>
+    <a href="/del_task/{{x.id}}/">удалить задачу</a><br>
+
+
+{% endfor %}
