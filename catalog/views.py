@@ -35,3 +35,5 @@ def task(request, task_id):
 def del_task(request, del_task_id):
     Notes.objects.filter(id=del_task_id).delete()
     return redirect('tasks_list')
+
+
